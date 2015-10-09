@@ -1,0 +1,15 @@
+<form method="POST" action="/password/email">
+    <?php echo csrf_field(); ?>
+
+
+    <div>
+        Email
+        <input type="email" name="email" value="<?php echo e(old('email')); ?>">
+    </div>
+
+    <div>
+        <button type="submit">
+            Send Password Reset Link
+        </button>
+    </div>
+</form>

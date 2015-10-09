@@ -1,0 +1,14 @@
+<html>
+<head>
+	<title>About page</title>
+</head>
+<body>
+	<p><?php echo e($name); ?></p>
+	<p><?php echo e($id); ?></p>
+	<p><?php echo e($phone); ?></p>
+	<?php if($homeTown): ?>
+		<?php echo e($homeTown); ?>
+
+	<?php endif; ?>
+</body>
+</html>
